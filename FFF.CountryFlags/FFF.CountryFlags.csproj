@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<Title>Country Flags</Title>
+		<Copyright>Copyright © 2024</Copyright>
+		<EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+		<PackageTags>Country, Flag</PackageTags>
+		<Description>The CountryFlag is dedicated to providing a comprehensive data model for representing country-specific information within applications. It includes a well-documented C# class that encapsulates a wide range of attributes including demographics, geographics, political data, and more. This repository serves as a foundation for applications requiring detailed information about countries around the world, such as educational tools, geographic information systems, and global market analysis platforms.</Description>
+		<Authors>FFF</Authors>
+		<Product>Country Flags</Product>
+		<Version>1.0.0</Version>
+		<AssemblyVersion>1.0.0.0</AssemblyVersion>
+		<FileVersion>1.0.0.0</FileVersion>
+		<PackageProjectUrl>https://www.nuget.org/packages/FFF.CountryFlags</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/ePotok22/CountryFlags</RepositoryUrl>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Remove="data.json" />
+		<None Remove="Resources\*\*\*.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Include="Resources\*\*\*.png" />
+		<EmbeddedResource Include="data.json" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="System.Text.Json" Version="4.7.2" />
+	</ItemGroup>
+
+</Project>
