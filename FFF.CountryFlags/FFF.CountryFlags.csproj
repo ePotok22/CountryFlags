@@ -9,16 +9,16 @@
 		<Description>The CountryFlag is dedicated to providing a comprehensive data model for representing country-specific information within applications. It includes a well-documented C# class that encapsulates a wide range of attributes including demographics, geographics, political data, and more. This repository serves as a foundation for applications requiring detailed information about countries around the world, such as educational tools, geographic information systems, and global market analysis platforms.</Description>
 		<Authors>FFF</Authors>
 		<Product>Country Flags</Product>
-		<Version>2.0.0</Version>
-		<AssemblyVersion>2.0.0.0</AssemblyVersion>
-		<FileVersion>2.0.0.0</FileVersion>
+		<Version>2.0.1</Version>
+		<AssemblyVersion>2.0.1.0</AssemblyVersion>
+		<FileVersion>2.0.1.0</FileVersion>
 		<PackageProjectUrl>https://www.nuget.org/packages/FFF.CountryFlags</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/ePotok22/CountryFlags</RepositoryUrl>
 		<UserSecretsId>92ca354f-4e35-4a09-8001-88e566f66aff</UserSecretsId>
 	</PropertyGroup>
 
 	<ItemGroup>
-		<EmbeddedResource Include="Resources\*" />
+		<EmbeddedResource Include="Resources\*\*\*.png" />
 		<EmbeddedResource Include="data.json" />
 	</ItemGroup>
 
@@ -27,7 +27,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Resources\SX\Flat\" />
+		<Folder Include="Resources\SX\Flat\" />
 	</ItemGroup>
 
 </Project>
