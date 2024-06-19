@@ -22,6 +22,7 @@ namespace FFF.CountryFlags.Providers
         private readonly JsonSerializerOptions _jsonSerializerOptions = new JsonSerializerOptions
         {
             PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+            TypeInfoResolver = CountryFlagJsonContext.Default,
         };
 
         // Static reference to the executing assembly to access embedded resources.
