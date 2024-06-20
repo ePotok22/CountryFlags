@@ -31,6 +31,11 @@
         public string[] CallingCodes { get; set; }
 
         /// <summary>
+        /// Gets or sets the area codes for the country.
+        /// </summary>
+        public string[] AreaCodes { get; set; }
+
+        /// <summary>
         /// Gets or sets the capital city of the country.
         /// </summary>
         public string Capital { get; set; }
